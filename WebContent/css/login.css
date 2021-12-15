@@ -1,0 +1,64 @@
+.principal-container{
+    width: 1350px;
+    height: 750px;
+    margin: 0px;
+    margin-left: -10px;
+    background: url(../img/Fondos/478.jpg);
+}
+.second-container{
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 550px;
+    margin-right: 560px;
+    margin-bottom: 100px;
+}
+.container-form{
+    width: 237px;
+    border: 2px solid;
+    border-style: outset;
+    padding: 10px;
+    background: #BDBDBD;
+}
+.form-label{
+    display: block;
+    color: black;
+    font-weight: 700px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.form-input{
+    width: 180px;
+    background-color: rgb(195, 139, 9);
+    color: white;
+    font-size: 15px;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 20px;
+    line-height: 25px;
+    padding: 0px 40px 0px 10px;
+    transition: 0.3s ease all;
+}
+
+.btn-login{
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 10px;
+    width: auto;
+    padding: 3px auto 2px 5px;
+    margin-left: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: .1s ease all;
+    width: 75px;
+}
+.btn-register{
+    margin-right: 0px;
+}
+.btn-login:hover{
+    box-shadow: 3px 0px 30px rgb(163, 163, 163, 1);
+}

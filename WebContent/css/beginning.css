@@ -1,0 +1,16 @@
+/*#0d6efd = color-primary*/
+
+a{
+    display: block;
+    text-decoration: none;
+}
+.sidebar-container{
+    height: 625px;
+}
+.sidebar-container .logo{
+    margin-left: 45px;
+}
+.nav-bar{
+    width: 1180px;
+    margin-left: 175px;
+}

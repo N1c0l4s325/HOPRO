@@ -1,0 +1,100 @@
+.principal-container{
+    width: 1350px;
+    margin: auto;
+    margin-left: -10px;
+    background: url("../img/Fondos/478.jpg");
+}
+.second-container{
+    width: 1000px;
+    margin: auto;
+    padding: 40px;
+    
+}
+.form-contact-container{
+    margin: 0px;
+    margin-left: 250px;
+    margin-right: auto;
+}
+.form-group-name{
+    float: left;
+    margin-right: 30px;
+}
+.form-label{
+    display: block;
+    color: white;
+    font-weight: 700px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.form-label-email{
+    margin: 0px;
+    margin-left: 215px;
+    margin-right: auto;
+}
+.form-label-coments{
+    margin: 0px;
+    margin-left: 115px;
+    margin-right: auto;
+}
+.form-input-email{
+    width: 480px;
+}
+.form-input-textarea{
+    width: 370px;
+    height: 200px;
+}
+textarea{
+  color: white;
+   max-width: 370px;
+   max-height: 250px;
+   min-height: 200px;
+   background-color: rgb(195, 139, 9);
+   font-size: 18px;
+   padding-left:3px ;
+}
+.form_register-input-coments{
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.form-input{
+    background-color: rgb(195, 139, 9);
+    position: relative;
+    height: 45px;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+
+.form-input:focus{
+    border: 3px solid white;
+    outline: none;
+}
+.form-state-error{
+    color: white;
+    font-size: 15px;
+    display: none;
+}
+.form-state-error-active{
+    display: block;
+}
+.form-group-btn{
+   margin-left: 170px;
+   margin-right: auto;
+}
+.btn-send{
+        border: none;
+        border-radius: 3px;
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: 1s ease all;
+        cursor: pointer;
+}
+.btn-send:focus{
+     background-color: whitesmoke;
+}

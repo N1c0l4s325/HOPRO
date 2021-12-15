@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamos</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+   
+    
+        
+</head>
+<body>
+<jsp:include page="nav-bar.jsp"></jsp:include>
+<div class="container">
+   <!--cards about rooms-->
+  <!-- <div class="row d-flex justify-content-center align-items-center mt-4">
+    <div id="contenido-oculto" class="col-12">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="card w-75 bg-info ">
+                    <div class="card-body text-white">
+                        <p class="fs-3">Habitacion</p>
+                        <div>
+                            <p class="fs-3">101</p>
+                        </div>
+                        
+                    </div>
+                    <div  class="card-footer text-center ">
+                        <a id="boton-reclamo" href="" class="text-decoration-none text-white">Realizar reclamo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card w-75 bg-info ">
+                    <div class="card-body text-white">
+                        <p class="fs-3">Habitacion</p>
+                        <div>
+                            <p class="fs-3">102</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-center ">
+                        <a d="boton-reclamo" href="" class="text-decoration-none text-white">Realizar reclamo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card w-75 bg-info ">
+                    <div class="card-body text-white">
+                        <p class="fs-3">Habitacion</p>
+                        <div>
+                            <p class="fs-3">103</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer text-center ">
+                        <a d="boton-reclamo" href="" class="text-decoration-none text-white">Realizar reclamo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>  -->
+   <!------------------------------info about claims--------------------------------------------------->
+   <div id="contenido-reclamos" class="row mt-3 mb-5 h-25 border ">
+        <div class="col col-lg-12 col-xl-12 col-xxl-12 bg-light">
+        <h1 class="fs-3 text-uppercase">Reclamos realizados</h1>
+        </div>
+   </div>
+    <div class="row mb-5 d-flex justify-content-center">
+        
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex">
+           <form action="">
+             <input type="hidden" name="accion" value="mostrarReclamos">  
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-8 col-xxl-8">
+                    <input class="form-control w-100" type="text" name="txt-filter" placeholder="Buscar reserva por cliente">
+                </div>
+                <div class="col-12 col-lg-2 col-xl-2 col-xl-2">
+                    <input class="btn btn-success" type="btn btn-success" value="Buscar">
+                </div>
+            </div>
+        </form>
+
+        </div>
+    </div>
+
+
+   <!--cards about info-------------------------------------------------------------->
+    <div id="contenido-reclamos" class="row ">
+       <div class="col col-lg-6 col-xl-6 col-xxl-6">
+           <table class="table border">
+              
+                   <tr>
+                       <th colspan="2">Habitacion</th>
+                   </tr>
+            
+                    <tr>
+                        <td>Numero:</td>
+                        <td>A15</td>
+                    </tr>
+                    <tr>
+                        <td>Tipo:</td>
+                        <td>Matrimonial</td>
+                    </tr>
+            </table>             
+        </div>
+        <div class="col col-lg-6 col-xl-6 col-xxl-6">
+           
+                <table class="table border">
+                    <tr>
+                        <th colspan="2">Cliente</th>
+                    </tr>
+                    <tr>
+                        <td>Nombre y apellido:</td>
+                        <td>Juan Perez</td>
+                    </tr>
+                    <tr>
+                        <td>DNI o pasaporte:</td>
+                        <td>38.362.245</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de entrada:</td>
+                        <td>26/02/13</td>
+                    </tr>
+                </table> 
+            
+                      
+        </div>
+    </div>
+    <!--Tabla de reclamos por la habitacion-->
+    <div id="contenido-reclamos" class="table-responsive ">
+        <table class="table border">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripcion</th>
+                    <th> Hora y fecha de ingreso</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>4564</td>
+                <td><a class="text-uppercase" data-bs-toggle="modal" data-bs-target="#description-modal">ver</a></td>
+                <td>8/10/21 16:34</td>
+                <td class="text-danger">En espera</td>
+                <td>
+                    <a href="" class="text-decoration-none"><i class="fas fa-trash-alt"></i><span class="ms-2">Eliminar</span></a> 
+                    <a href="" class="text-decoration-none ms-1" data-bs-toggle="modal" data-bs-target="#modal_form_edit_claim"><i class="far fa-edit"></i><span class="ms-1 me-5">Editar</span></a> 
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--Modal Descripcion-------------------------------------->
+    <div class="modal fade" tabindex="-1" id="description-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row content-center">
+                        <div class="col-8 border">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-12 col-lg-12 col-xl-6 col-xxl-6 p-3">
+                                    <div class="text-center">
+                                        <label for="id-reclamo" class="form-label">ID reclamo</label>
+                                        <input class="form-control text-center" type="text" id="id_reclamo" readonly="disable" value="4564">
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <label for="hF_reclamo" class="form-label">Fecha y hora</label>
+                                        <input class="form-control text-center w-100" type="text" id="hF_reclamo" readonly="disable" value="8/10/21 16:34">
+                                                                           
+                                    </div>                   
+                                </div>
+                                <div class="col-12 col-12 col-lg-12 col-xl-12 col-xxl-12 mt-3 p-3">
+                                    <h1 class="text-center fs-3">Descripcion del reclamo</h1>
+                                    <p class="border p-3">
+                                        El cliente llega a la habitacion y se encuentra que no anda la canilla del agua caliente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger me-3" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!----Modal formulario de reclamo------>
+    <div class="modal" tabindex="-1" id="modal_form_claim">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Por favor, detalle reclamo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                          <div class="col-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <form action="">
+                                <div class="input-textarea">
+                                   <textarea class="form-control textarea-area "></textarea>
+                                </div>
+                                <div class="btn-save">
+                                    <button type="submit" class="btn btn-success btn-save">Guardar</button>
+                                </div>
+                            </form>
+                          </div>
+                      </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="row bg-dark mb-3 d-flex">
+          <div class="col-12 col-lg-12 col-lg-12 col-xxl-12 m-2">
+                <div class="row">
+                     <div class="col-12 col-lg-10 col-xl-10 col-xxl-10">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal_form_claim"><i class="fas fa-plus"></i>
+                        Agregar reclamo nuevo</button>                             
+                     </div>
+                     <div class="col-12 col-lg-2 col-xl-2 col-xxl-2">
+                        <a href="reclamo.html" class="btn btn-success" > Despejar  tabla </a>
+                    </div>                
+                </div>
+               
+          </div>  
+            
+      </div>
+
+       <!--Formulario para editar reclamo-->
+   
+   <div class="modal" tabindex="-1" id="modal_form_edit_claim">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Por favor, detalle reclamo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                      <div class="row">
+                          <div class="col-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <form action="">
+                                <input type="hidden" name="id_edit_textarea" value="">
+                                <div class="input-textarea">
+                                   <textarea class="form-control textarea-area "></textarea>
+                                </div>
+                                <div class="btn-save">
+                                    <button type="submit" class="btn btn-info btn-save" data-bs-dismiss="modal">Editar</button>
+                                </div>
+                            </form>
+                          </div>
+                      </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+</div>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>
